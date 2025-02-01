@@ -14,7 +14,9 @@ buttons.forEach((btn) => {
       display.innerText = currentValue.length === 0 ? "0" : currentValue;
       return;
     }
-
+    if(value === 'x') {
+      value = '*';
+    }
     if (value === "C") {
       display.innerText = "0";
       currentValue = "";
@@ -69,3 +71,4 @@ function showResult() {
     currentValue = "";
   }
 }
+
